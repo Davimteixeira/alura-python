@@ -1,27 +1,28 @@
 import random
 
+def jogar():
 
-print('---------------------------------')
-print('bem vindo ao jogo de adivinhação')
-print('---------------------------------')
+  print('---------------------------------')
+  print('bem vindo ao jogo de adivinhação')
+  print('---------------------------------')
 
-numero_secreto = random.randrange(1,101) 
-total_de_tentativas = 0
-pontos = 1000
+  numero_secreto = random.randrange(1,101) 
+  total_de_tentativas = 0
+  ontos = 1000
 
-print("qual o nivel de dificuldade ?")
-print("(1) fácil (2) médio (3) dificil")
+  print("qual o nivel de dificuldade ?")
+  print("(1) fácil (2) médio (3) dificil")
 
-nivel = int(input("defina um nivel: "))
+  nivel = int(input("defina um nivel: "))
 
-if(nivel == 1):
+  if(nivel == 1):
     total_de_tentativas = 20
-elif(nivel == 2):
+  elif(nivel == 2):
     total_de_tentativas = 10
-else:
+  else:
     total_de_tentativas = 5
 
-for rodada in range(1, total_de_tentativas + 1):
+  for rodada in range(1, total_de_tentativas + 1):
     print(f"tentativa {rodada} de {total_de_tentativas}")
     chute_str = input('digite um numero entre 1 e 100: ')
     print('voce digitou', chute_str)
