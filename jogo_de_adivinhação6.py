@@ -1,6 +1,6 @@
 import random
 
-def jogar():
+def jogar_adivinhacao():
 
   print('---------------------------------')
   print('bem vindo ao jogo de adivinhação')
