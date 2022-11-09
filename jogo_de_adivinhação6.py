@@ -48,4 +48,5 @@ def jogar_adivinhacao():
         pontos = pontos - pontos_perdidos
     if (total_de_tentativas == rodada):
            print("FIM DE JOGO !!!!!")
-    
+    if(__name__=="__main__"):
+        jogar_adivinhacao()
