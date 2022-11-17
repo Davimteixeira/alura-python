@@ -4,7 +4,7 @@ class Conta:
         # o _ mostra que esse atributo é privado
               print('construindo o objeto... {}'.format(self))
               self._numero = numero
-              self._titular = titular
+              self._titular = titular 
               self._saldo = saldo
               self._limite = limite
 
