@@ -1,5 +1,6 @@
 import random
 
+
 def jogar_adivinhacao():
 
   print('---------------------------------')
@@ -8,7 +9,7 @@ def jogar_adivinhacao():
 
   numero_secreto = random.randrange(1,101) 
   total_de_tentativas = 0
-  ontos = 1000
+  pontos = 1000
 
   print("qual o nivel de dificuldade ?")
   print("(1) fácil (2) médio (3) dificil")
@@ -44,7 +45,7 @@ def jogar_adivinhacao():
            print("Você errou! O seu chute foi maior que o número secreto.")   
         elif (menor):
            print("Você errou! O seu chute foi menor que o número secreto.")
-        pontos_perdidos = abs(numero_secreto - chute)
+        pontos_perdidos = (numero_secreto - chute)
         pontos = pontos - pontos_perdidos
     if (total_de_tentativas == rodada):
            print("FIM DE JOGO !!!!!")
