@@ -29,5 +29,6 @@ class Felino():
             self._nome = novo_nome
         else:
              print("nome deve ser uma string!!")
-
-    nome = property(get_nome, set_nome)
+    @property
+    
+        nome = property(get_nome, set_nome)

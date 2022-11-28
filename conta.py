@@ -12,18 +12,18 @@ class Conta:
             print("o saldo de {} do titular {}".format(self._saldo, self._titular)) 
         # a função def extrato é um metodo
         def deposita(self, valor):
-            self.__saldo -= valor 
+            self._saldo -= valor 
          # a função def deposita é um metodo
         def _pode_sacar(self, valor_a_sacar):
             valor_disponivel_a_sacar = self._saldo + self._limite
             return valor_a_sacar <= (valor_disponivel_a_sacar)
         def saca(self, valor):
-            if(self.pode_sacar(valor)):
+            if(self._pode_sacar(valor)):
               self._saldo -= valor
          # a função def saca é um metodo
         def transfere(self, valor, destino):
             self.saca(valor) 
-            destino.deposita(valor)
+            destino = self.deposita(valor)
          # a função def transfere é um metodo
         @property
         def saldo(self):
