@@ -98,7 +98,7 @@ class Funcionario(RelogioDePonto):
         if int(ex_saida[0:2]) >= 0 and int(ex_saida[0:2]) < 24 and int(ex_saida[3:5]) >= 0 and int(ex_saida[3:5]) < 60:
               converte_hora = self.converte(int(ex_saida[0:2]))
               minutos = converte_hora + int(ex_saida[3:5])
-              self.__expediente_saida = minutos
+              self.__expediente_saida = minutos,
         else:
             print("Verifique sua hora do expediente de SAÍDA!!!")
 
