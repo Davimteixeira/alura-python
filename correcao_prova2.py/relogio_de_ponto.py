@@ -131,10 +131,10 @@ class Operador(Funcionario):
         super().__init__(nome)
 
 class Repositor(Funcionario):
-    def __init__(self, nome):
+    def __init__(self, nome): 
         super().__init__(nome)
 
-joao = Funcionario("João")
+joao = Funcionario(90)
 joao.set_expediente_entrada("08:00")
 joao.set_expediente_saida("17:00")
 joao.set_hora_entrada("08:15")
@@ -146,7 +146,7 @@ joao.verifica_atraso()
 print("="*20)
 print(joao)
 
-vicente = Operador("Vicente")
+vicente = Operador("Vicen")
 vicente.set_expediente_entrada("07:00")
 vicente.set_expediente_saida("15:00")
 vicente.set_hora_entrada("07:03")

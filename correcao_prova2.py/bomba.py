@@ -52,7 +52,8 @@ class BombaCombustivel:
     def __str__(self):
         return f'Na bomba tem {self.quantidade_de_combustivel:.2f} litros e o valor do litro de gasolina é R${self.valor_do_litro:.2f}.'
 
-posto01 = BombaCombustivel(5.00)
+posto01 = BombaCombustivel('ww')
+print(posto01.valor_do_litro)
 print("*"*20)
 print(posto01)
 posto01.abastecer_veiculo(valor = 50.00)
